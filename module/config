@@ -1,0 +1,13 @@
+ngx_addon_name=ngx_http_sewing_module
+HTTP_MODULES="$HTTP_MODULES ngx_http_sewing_module"
+
+HTTP_SEWING_SRCS=" \
+            $ngx_addon_dir/src/crate_demo.c \
+            $ngx_addon_dir/src/sewing_crate.c \
+            $ngx_addon_dir/src/sewing_task.c \
+            $ngx_addon_dir/src/sewing_work.c \
+            $ngx_addon_dir/src/sewing_event.c \
+            $ngx_addon_dir/src/ngx_http_sewing_module.c \
+            "
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $HTTP_SEWING_SRCS"
+CORE_LIBS="$CORE_LIBS -lrt"

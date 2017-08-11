@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+third/tags
+third/nginx-1.12.0/
+third/ngx_devel_kit-0.3.0/
